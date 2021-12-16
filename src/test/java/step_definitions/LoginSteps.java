@@ -28,8 +28,6 @@ public class LoginSteps {
 
     @Given("^a user is on the login page$")
     public void navigateToLoginPage() {
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
         Action.browserActions(driver).openBrowser(ReadConfigFiles.getPropertyValues("TestAppURL"));
         LOGGER.info("User is in the Login Page");
     }

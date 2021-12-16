@@ -7,9 +7,9 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
-import page_objects.Home;
 import page_objects.NavigationBar;
 import page_objects.RealApr;
+import utilities.ReadConfigFiles;
 
 import java.util.List;
 import java.util.Map;
@@ -20,7 +20,7 @@ public class MortgageSteps {
 
     @Given("^user is in mortgage calculator home page$")
     public void navigateToMortgageCalculatorHomePage() {
-        Action.browserActions(driver).openBrowser("https://www.mortgagecalculator.org/");
+        Action.browserActions(driver).openBrowser(ReadConfigFiles.getPropertyValues("MortgageUrl"));
     }
 
     @And("^user is navigated to Real Apr page$")

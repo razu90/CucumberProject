@@ -3,7 +3,7 @@ package command_providers;
 import org.openqa.selenium.WebDriver;
 
 public class BrowserActions {
-    public WebDriver driver;
+    WebDriver driver;
 
     public BrowserActions(WebDriver driver) {
         this.driver = driver;
