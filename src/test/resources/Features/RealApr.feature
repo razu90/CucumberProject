@@ -1,4 +1,4 @@
-Feature: Mortgage Calculator
+Feature: Real Apr
 
 
   @CalculateAPR

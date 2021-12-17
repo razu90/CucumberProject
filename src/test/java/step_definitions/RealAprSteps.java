@@ -14,7 +14,7 @@ import utilities.ReadConfigFiles;
 import java.util.List;
 import java.util.Map;
 
-public class MortgageSteps {
+public class RealAprSteps {
     WebDriver driver = Hooks.driver;
 
 
